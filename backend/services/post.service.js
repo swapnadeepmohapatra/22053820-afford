@@ -63,6 +63,7 @@ export const getTopPostsWithMostComments = async () => {
       userId: post.userid,
       content: post.content,
       commentCount: post.commentCount,
+      comments: post.comments,
       rank: id + 1,
     }));
 
@@ -109,7 +110,7 @@ export const getLatestTop5Posts = async () => {
         id: post.id,
         userId: post.userid,
         content: post.content,
-        comment: comment,
+        comments: post.comments,
       };
     });
 
